@@ -22,6 +22,7 @@ body {
     hsl(262deg 38% 33%) 89%,
     hsl(259deg 40% 31%) 100%
   );
+  background-attachment: fixed;
 }
 
 .wrapper {
@@ -90,14 +91,16 @@ main.hero h3 {
   margin: 2rem 0 0 0;
 }
 
-footer {
-  overflow: hidden;
-}
-
 footer p.footer-tagline {
   font-size: 6vw;
   color: #342455;
   margin: 0;
+}
+
+.about footer,
+.projects footer,
+.blog footer {
+  margin-top: auto;
 }
 
 @keyframes heartbeat {
@@ -145,13 +148,21 @@ footer p .technology-highlight {
   }
 }
 
-footer p.tweetybird {
+footer span.tweetybird {
   font-style: normal;
   font-size: 4vw;
   margin: 4rem 0 2rem 0;
   animation: tweeter 3s infinite;
   transform: rotate(45deg);
+  display: inline-block;
 }
+
+main .page-title {
+  font-style: normal;
+  font-size: 7vw;
+}
+
+/* MEDIA QUERIES */
 
 @media (min-width: 600px) {
   header .site-title {
@@ -188,7 +199,7 @@ footer p.tweetybird {
 }
 
 @media (min-width: 1200px) {
-  footer p.tweetybird {
+  footer span.tweetybird {
     font-size: 48px;
   }
 }
