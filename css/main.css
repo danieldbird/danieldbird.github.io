@@ -41,15 +41,25 @@ header .site-title {
   margin: 0;
 }
 
-header .site-title a {
+header > a.logo-link {
+  text-decoration: none;
+}
+
+header a.logo-link:hover > .site-subtitle {
+  margin-top: -0.75rem;
+  padding-bottom: 0.25rem;
+}
+
+header a .site-title {
   color: #e3b7f3;
   text-decoration: none;
 }
 
-header .site-subtitle {
+header a .site-subtitle {
   color: #c76ad7;
-  font-size: 6vw;
+  /* font-size: 6vw; */
   margin: -0.5rem 0 0 0;
+  transition: margin 100ms ease-in-out, padding 100ms ease-in-out;
 }
 
 header nav.navigation ul {
