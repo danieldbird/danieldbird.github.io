@@ -1,8 +1,8 @@
 * {
-  box-sizing: border-box;
 }
 
 :root {
+  box-sizing: border-box;
   font-family: "Sansita", sans-serif;
   font-style: italic;
   text-align: center;
@@ -58,13 +58,13 @@ header nav.navigation ul {
   padding: 0;
   display: flex;
   justify-content: space-around;
-  font-size: 4vw;
+  font-size: 6vw;
 }
 
 header nav.navigation ul li a {
   color: #e194ee;
   background: none;
-  transition: text-shadow 200ms ease-out;
+  transition: text-shadow 100ms ease-in-out;
 }
 header nav.navigation ul li a:hover {
   background: none;
@@ -189,19 +189,19 @@ main .page-title {
     font-size: 36px;
   }
 
+  header nav.navigation ul {
+    font-size: 36px;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   main.hero .hero-img {
     width: 240px;
   }
 }
 
 @media (min-width: 750px) {
-  header nav.navigation ul {
-    font-size: 30px;
-    max-width: 750px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   footer p.footer-tagline {
     font-size: 45px;
   }
