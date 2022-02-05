@@ -79,6 +79,7 @@ main.hero .hero-img {
   border-radius: 50%;
   box-shadow: 0px 0px 15px #e3b7f3;
   transition: box-shadow 500ms ease-out;
+  margin-top: 3rem;
 }
 
 main.hero .hero-img:hover {
@@ -94,7 +95,7 @@ main.hero h3 {
 footer p.footer-tagline {
   font-size: 6vw;
   color: #342455;
-  margin: 0;
+  margin: 4rem 0 0;
 }
 
 .about footer,
@@ -122,6 +123,8 @@ footer p .heart {
 
 footer p .technology-highlight {
   color: #e3b7f3;
+  transition: opacity 3s ease-in-out;
+  opacity: 1;
 }
 
 @keyframes tweeter {
