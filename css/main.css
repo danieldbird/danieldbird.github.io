@@ -1,3 +1,98 @@
 :root {
   font-family: "Sansita", sans-serif;
+  font-style: italic;
+  box-sizing: border-box;
+  text-align: center;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  height: 100%;
+  background-image: linear-gradient(
+    0deg,
+    hsl(284deg 39% 56%) 0%,
+    hsl(281deg 36% 53%) 11%,
+    hsl(278deg 32% 50%) 22%,
+    hsl(276deg 33% 47%) 33%,
+    hsl(273deg 34% 44%) 44%,
+    hsl(271deg 35% 42%) 56%,
+    hsl(268deg 36% 39%) 67%,
+    hsl(265deg 37% 36%) 78%,
+    hsl(262deg 38% 33%) 89%,
+    hsl(259deg 40% 31%) 100%
+  );
+}
+
+header .site-title {
+  font-size: 15vw;
+  margin: 0;
+}
+
+header .site-title a {
+  color: #e7acff;
+  text-decoration: none;
+}
+
+header .site-subtitle {
+  color: #c76ad7;
+  font-size: 6vw;
+  margin: -0.5rem 0 0 0;
+}
+
+header nav.navigation ul {
+  list-style: none;
+  margin-top: 2rem;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  font-size: 4vw;
+}
+
+header nav.navigation ul li a {
+  color: #e194ee;
+  background: none;
+  transition: text-shadow 200ms ease-out;
+}
+header nav.navigation ul li a:hover {
+  background: none;
+  text-shadow: 0px 0px 10px rgba(201, 163, 216, 0.5);
+}
+
+main.hero {
+  margin: auto 0;
+}
+
+main.hero .hero-img {
+  width: 40vw;
+  height: auto;
+  border-radius: 50%;
+  /* margin: 8rem 0 1rem; */
+  box-shadow: 0px 0px 15px #c9a3d8;
+  transition: box-shadow 500ms ease-out;
+}
+main.hero .hero-img:hover {
+  box-shadow: 0px 0px 35px #c9a3d8;
+}
+
+main.hero h3 {
+  font-size: 6vw;
+  color: #c8a2d6;
+  margin: 2rem 0 0 0;
+}
+
+footer p.footer-tagline {
+  font-size: 6vw;
+  color: #342455;
+  margin: 0;
+}
+
+footer p.tweetybird {
+  margin: 2rem 0 2rem 0;
+}
+
+footer p .technology-highlight {
+  color: #d1addf;
 }
