@@ -82,39 +82,20 @@ header nav.navigation ul li a:hover {
   text-shadow: 0px 0px 10px rgba(201, 163, 216, 0.5);
 }
 
-main.hero {
-  margin: auto 0;
+main h3.page-title {
+  font-style: normal;
+  font-size: 7vw;
+  margin-top: 0;
 }
 
-main.hero .hero-img {
-  width: 40vw;
-  height: auto;
-  border-radius: 50%;
-  box-shadow: 0px 0px 15px #e3b7f3;
-  transition: box-shadow 500ms ease-out;
-  margin-top: 3rem;
-}
-
-main.hero .hero-img:hover {
-  box-shadow: 0px 0px 35px #e3b7f3;
-}
-
-main.hero h3 {
-  font-size: 6vw;
-  color: #e3b7f3;
-  margin: 2rem 0 0 0;
+footer {
+  margin-top: auto;
 }
 
 footer p.footer-tagline {
   font-size: 6vw;
   color: #342455;
   margin: 4rem 0 0;
-}
-
-.about footer,
-.projects footer,
-.blog footer {
-  margin-top: auto;
 }
 
 @keyframes heartbeat {
@@ -173,11 +154,6 @@ footer span.tweetybird {
   display: inline-block;
 }
 
-main .page-title {
-  font-style: normal;
-  font-size: 7vw;
-}
-
 /* PARTICLES */
 #canvas {
   position: absolute;
@@ -205,21 +181,11 @@ main .page-title {
     margin-left: auto;
     margin-right: auto;
   }
-
-  main.hero .hero-img {
-    width: 240px;
-  }
 }
 
-@media (min-width: 750px) {
-  footer p.footer-tagline {
-    font-size: 45px;
-  }
-}
-
-@media (min-width: 900px) {
-  main.hero h3 {
-    font-size: 54px;
+@media (min-width: 1000px) {
+  main h3.page-title {
+    font-size: 70px;
   }
 }
 
