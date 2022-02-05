@@ -1,7 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
   font-family: "Sansita", sans-serif;
   font-style: italic;
-  box-sizing: border-box;
   text-align: center;
   height: 100%;
 }
@@ -66,7 +69,7 @@ header nav.navigation ul li a {
 header nav.navigation ul li a:hover {
   background: none;
   color: #eca9f8;
-  text-shadow: 0px 0px 30px rgba(201, 163, 216, 0.5);
+  text-shadow: 0px 0px 10px rgba(201, 163, 216, 0.5);
 }
 
 main.hero {
@@ -163,6 +166,15 @@ footer span.tweetybird {
 main .page-title {
   font-style: normal;
   font-size: 7vw;
+}
+
+/* PARTICLES */
+#canvas {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 /* MEDIA QUERIES */
