@@ -1,0 +1,89 @@
+#blog main {
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+
+#blog main h3.page-title {
+  margin: 0 0 1.5rem 0;
+}
+
+#blog main .blog-posts {
+  display: flex;
+  flex-direction: column;
+}
+
+#blog main .blog-posts .blog-post {
+  display: flex;
+  flex-direction: row;
+  border-radius: 1rem;
+  align-items: left;
+  text-align: left;
+  max-width: 60%;
+  margin: 1.5rem auto;
+}
+
+#blog main .blog-posts .blog-post .blog-image {
+  width: 50%;
+}
+
+#blog main .blog-posts .blog-post .blog-image img {
+  width: 100%;
+  /* margin: auto 0; */
+}
+
+#blog main .blog-posts .blog-post .blog-details {
+  padding-left: 1rem;
+  width: 100%;
+}
+
+#blog main .blog-posts .blog-post .blog-details .blog-title {
+  color: #f2ceff;
+  text-decoration: underline;
+  font-size: 4vw;
+  margin: 0;
+}
+
+#blog main .blog-posts .blog-post .blog-details .blog-date {
+  color: #c76ad7;
+  font-size: 2.5vw;
+  margin: 0.25rem 0 0 0;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+#blog main .blog-posts .blog-post .blog-details .blog-excerpt {
+  font-size: 3vw;
+  color: #f1c8ff;
+  margin: 1rem 0 0 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+/* .blog-separator {
+  width: 40%;
+  border: 1px dashed #c086ca;
+} */
+
+@media (min-width: 750px) {
+  #blog main .blog-posts .blog-post .blog-image {
+    width: 225px;
+  }
+
+  #blog main .blog-posts .blog-post .blog-details .blog-title {
+    font-size: 30px;
+  }
+
+  #blog main .blog-posts .blog-post .blog-details .blog-date {
+    font-size: 19px;
+  }
+
+  #blog main .blog-posts .blog-post .blog-details .blog-excerpt {
+    font-size: 23px;
+  }
+}
