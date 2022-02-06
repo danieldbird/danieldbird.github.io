@@ -24,19 +24,19 @@
 /* MEDIA QUERIES */
 
 @media (min-width: 600px) {
-  main.hero .hero-img {
+  #home main.hero .hero-img {
     width: 240px;
   }
 }
 
 @media (min-width: 750px) {
-  footer p.footer-tagline {
+  #home footer p.footer-tagline {
     font-size: 45px;
   }
 }
 
 @media (min-width: 900px) {
-  main.hero h3 {
+  #home main.hero h3 {
     font-size: 54px;
   }
 }

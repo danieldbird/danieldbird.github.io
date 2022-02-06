@@ -1,8 +1,8 @@
 * {
+  box-sizing: border-box;
 }
 
 :root {
-  box-sizing: border-box;
   font-family: "Sansita", sans-serif;
   font-style: italic;
   text-align: center;
@@ -57,7 +57,7 @@ header a .site-title {
 
 header a .site-subtitle {
   color: #c76ad7;
-  /* font-size: 6vw; */
+  font-size: 6vw;
   margin: -0.5rem 0 0 0;
   transition: margin 100ms ease-in-out, padding 100ms ease-in-out;
 }
@@ -166,12 +166,12 @@ footer span.tweetybird {
 /* MEDIA QUERIES */
 
 @media (min-width: 600px) {
-  header .site-title {
+  header a .site-title {
     font-size: 90px;
     margin: 0;
   }
 
-  header .site-subtitle {
+  header a .site-subtitle {
     font-size: 36px;
   }
 
