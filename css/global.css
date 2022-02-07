@@ -7,6 +7,7 @@
   font-style: italic;
   text-align: center;
   height: 100%;
+  color: #e3b7f3;
 }
 
 body {
@@ -25,6 +26,7 @@ body {
     hsl(262deg 38% 33%) 89%,
     hsl(259deg 40% 31%) 100%
   );
+
   background-attachment: fixed;
 }
 
