@@ -17,7 +17,7 @@
 
 #home main.hero h3 {
   font-size: 6vw;
-  color: #e3b7f3;
+  color: var(--main-color1);
   margin: 2rem 0 0 0;
 }
 

@@ -9,7 +9,7 @@
 #blog-post main h3.page-title {
   font-size: 7vw;
   font-style: italic;
-  color: #f7e2ff;
+  color: var(--main-color3);
   margin: 0;
   text-align: left;
 }
@@ -31,7 +31,7 @@
     "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: normal;
-  color: #f1f1f1;
+  color: var(--main-color3);
   line-height: 1.5rem;
   text-align: left;
 }
@@ -41,24 +41,24 @@
 }
 
 #blog-post main .post-content p a {
-  color: #de8aff;
+  color: var(--main-color4);
 }
 
 #blog-post main .post-content p a:hover {
-  color: #e8aeff;
+  color: var(--main-color5);
 }
 
 #blog-post main .post-content h4 {
   font-size: 5vw;
-  color: #ecbbff;
+  color: var(--main-color6);
   text-decoration: underline;
   font-weight: bold;
   margin: 2rem 0 1rem;
 }
 
 #blog-post main .post-content code {
-  color: rgb(192, 13, 192);
-  background: #ecbbff;
+  color: var(--main-color7);
+  background: var(--main-color6);
   padding: 0.25rem 0.25rem;
 }
 
