@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Daniel Bird - Student developer</title>
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../css/blog.css" />
+    <link rel="stylesheet" href="../../css/blog-post.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="Daniel Bird - Student developer" />
+    <meta property="og:description" content="Daniel Bird's personal website." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://danieldbird.github.io/" />
+    <meta property="og:image" content="../../images/og-icon-192.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../../js/script.js" defer></script>
+    <script src="../../js/particles.js" defer></script>
+    <style>
+      .illustration {
+        width: 100%;
+        /* text-align: center; */
+      }
+      .illustration img {
+        width: 100px;
+      }
+      .illustration img.pbm-img-content {
+        width: 80px;
+      }
+      .illustration img.pbm-img-padding {
+        width: 110px;
+      }
+      .illustration img.pbm-img-border {
+        width: 115px;
+      }
+      .illustration img.pbm-img-margin {
+        width: 135px;
+      }
+    </style>
+  </head>
+
+  <body id="blog-post" class="blog-post">
+    <div class="wrapper">
+      <header>
+        <a href="/" class="logo-link">
+          <h1 class="site-title">Daniel Bird</h1>
+          <h2 class="site-subtitle">danieldbird.github.io</h2></a
+        >
+        <nav class="navigation">
+          <ul>
+            <li><a href="/pages/about.html">About</a></li>
+            <li><a href="/pages/projects.html">Things I've Done</a></li>
+            <li><a href="/pages/blog.html">Blog</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h3 class="page-title">Javascript DOM</h3>
+        <p class="blog-date">14th February 2022</p>
+        <img src="../../images/javascript-dom.jpg" alt="Javascript DOM" class="blog-hero" />
+        <div class="post-content">
+          <h4>The difference between HTML and CSS</h4>
+          <p>
+            The differences between HTML and CSS could be understood using an analogy to how a house
+            is built.
+          </p>
+          <p>
+            You first draw out the plans of a house. This is what is known as wireframing in web
+            design, and can be done on paper, or on computer, and is the roughing out of what the
+            end product will look like.
+          </p>
+          <p>
+            Then comes the framing of the house, dividing the house perimeter into what will later
+            become separate rooms. This is like marking up the HTML. Creating the space for what
+            will later become the header, footer, sidebar etc.
+          </p>
+          <p>
+            Once you have the structure of the house, then you are able to do the finishing work,
+            like putting in and selecting variable items like insulation, gib board, mouldings,
+            paint colours, carpet and its colour etc. This is like the CSS of a website, and how it
+            styles the basic HTML structure with varying styles.
+          </p>
+          <h4>Control flow and loops</h4>
+          <p>Control flow can be described using anything that requires a decision.</p>
+          <p>Let's use the analogy of traffic on the roads.</p>
+          <p>
+            A human can perform an almost infinite amount of manoeuvres, however in this example we
+            will pretend we are following the road rules. So there you are at a traffic light.
+          </p>
+          <p>
+            Using pseudo code we can describe process flow like. Is the light green? Yes, go. No,
+            wait. And repeat this question over and over until we eventually get a Yes answer (or
+            honked from behind), and begin moving.
+          </p>
+          <p>
+            At every point we never leave the process flow, even while driving in a straight line.
+            The process is; what is the speed limit, are we going below that speed? Yes, increase
+            speed, no decrease speed. Approaching a traffic light, is it green? Yes, proceed. No,
+            slow to a stop.
+          </p>
+          <p>
+            Then because we know this process, we can loop back this process flow to our waiting at
+            the traffic light function. We now have a very basic driving between traffic lights
+            while following the speed limit process flow.
+          </p>
+          <h4>The DOM</h4>
+          <p>
+            The document object model (DOM) is the hierarchical, tree-like structure of a webpage
+            represented as data. The purpose of this data representation is so it can then be
+            modified to change the document structure, style, or content.
+          </p>
+          <p>
+            Just like a javascript object, its elements can be selected using Javascript, and then
+            manipulated.
+          </p>
+          <p>
+            For example, elements in the DOM can be selected using the elements tag, id, class,
+            attribute etc. Once selected, you can apply modifications to it.
+            <code>document.body.style.background = "red";</code>
+          </p>
+          <p>
+            This selects the document, and the body element inside the document, and changes its
+            background colour to red.
+          </p>
+          <h4>Accessing data from arrays and objects</h4>
+          <p>Accessing data from array and objects are similar but with distinct differences.</p>
+          <p>Arrays</p>
+          <p>
+            To access an arrays data, you type the array followed by the index number of the array
+            value you want to access.
+          </p>
+          <code>myArr[myIndex]</code>
+          <p>Remembering that arrays begin with an index of zero (0).</p>
+          <p>
+            You can return the index of an item in an array with <code>arr.indexOf('value');</code>
+          </p>
+          <p>Objects</p>
+          <p>
+            To access a value in an object you type the object followed by either bracket or dot
+            notation.
+          </p>
+          <code>myObj['myKey']</code>
+          <br />
+          <code>myObj.myKey</code>
+          <p>
+            Bracket notation is useful for when you are getting the key name from a variable value,
+            in which case dot notation wont work.
+          </p>
+          <h4>Functions are and why they are useful</h4>
+          <p>Functions are like blocks of code that you can group together to be reusable.</p>
+          <p>
+            On top of that, they can be given parameters and arguments so they can work on unique
+            data each time.
+          </p>
+          <p>This is extremely useful for a number of reasons.</p>
+          <p>
+            First is to be able to organise your code better and group areas of concern. If all code
+            was just jumbled together like spaghetti it would be extremely difficult to refactor or
+            fix, without knowing you wont break something else.
+          </p>
+          <p>
+            Another reason is to scope your variables in a block. This is similar to the above, but
+            it ensures you don't pollute the global namespace and have variables accidentally change
+            their values without you meaning for them to.
+          </p>
+          <p>
+            Another great reason is to use functions is so you do not repeat code. Also known as DRY
+            (do not repeat yourself). If you repeat code you are not only writing more code, your
+            files sizes are bigger, and if you need to change something you will end up needing to
+            replace the same code in multiple places which increases the chance of introducing bugs.
+          </p>
+        </div>
+      </main>
+      <footer>
+        <span class="tweetybird">🐤</span>
+      </footer>
+    </div>
+    <canvas id="canvas"></canvas>
+  </body>
+</html>
