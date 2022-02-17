@@ -1,8 +1,12 @@
-#home main.hero {
+/* hero */
+.hero {
   margin: auto 0;
+  font-family: "Sansita", sans-serif;
+  font-style: italic;
+  text-align: center;
 }
 
-#home main.hero .hero-img {
+.hero-img {
   width: 40vw;
   height: auto;
   border-radius: 50%;
@@ -11,32 +15,65 @@
   margin-top: 3rem;
 }
 
-#home main.hero .hero-img:hover {
+.hero-img:hover {
   box-shadow: 0px 0px 35px #e3b7f3;
 }
 
-#home main.hero h3 {
+.hero h3 {
   font-size: 6vw;
   color: var(--main-color1);
   margin: 2rem 0 0 0;
 }
 
-/* MEDIA QUERIES */
+/* footer attachment */
+.footer-tagline {
+  font-size: 6vw;
+  color: var(--main-color11);
+  margin: 4rem 0 0;
+  font-family: "Sansita", sans-serif;
+  font-style: italic;
+  text-align: center;
+}
 
+footer p .heart {
+  padding-right: 0.4rem;
+  animation: heartbeat 1s infinite;
+}
+
+footer p .technology-highlight {
+  color: var(--main-color1);
+  transition: opacity 3s ease-in-out;
+  opacity: 1;
+}
+
+/* make the heart beat */
+@keyframes heartbeat {
+  0% {
+    text-shadow: 0px 0px 0px rgba(255, 0, 0, 0);
+  }
+  50% {
+    text-shadow: 0px 0px 15px rgba(255, 0, 0, 1);
+  }
+  100% {
+    text-shadow: 0px 0px 0px rgba(255, 0, 0, 0);
+  }
+}
+
+/* media queries */
 @media (min-width: 600px) {
-  #home main.hero .hero-img {
+  .hero-img {
     width: 240px;
   }
 }
 
 @media (min-width: 750px) {
-  #home footer p.footer-tagline {
+  .footer-tagline {
     font-size: 45px;
   }
 }
 
 @media (min-width: 900px) {
-  #home main.hero h3 {
+  .hero h3 {
     font-size: 54px;
   }
 }

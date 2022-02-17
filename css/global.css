@@ -1,9 +1,8 @@
-/*** SITE WIDE */
 * {
   box-sizing: border-box;
 }
 
-/*** COLOUR VARIABLES */
+/*** colour variables */
 :root {
   --main-color3: #f1f1f1;
   --main-color12: #f2ceff;
@@ -16,7 +15,6 @@
   --main-color8: #c76ad7;
   --main-color7: #c00dc0;
   --main-color11: #342455;
-
   --default-gradient: linear-gradient(
     0deg,
     hsl(284deg 39% 56%) 0%,
@@ -32,10 +30,13 @@
   );
 }
 
+/* default font style */
 :root {
-  font-family: "Sansita", sans-serif;
-  font-style: italic;
-  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
   height: 100%;
   color: var(--main-color1);
 }
@@ -55,91 +56,80 @@ body {
   margin: 0 auto;
 }
 
-header .site-title {
-  font-size: 15vw;
-  margin: 0;
-}
-
-header > a.logo-link {
+a {
   text-decoration: none;
 }
 
-header a.logo-link:hover > .site-subtitle {
+/* header */
+header {
+  font-family: "Sansita", sans-serif;
+  font-style: italic;
+  text-align: center;
+}
+
+.logo-link:hover > .site-subtitle {
   margin-top: -0.75rem;
   padding-bottom: 0.25rem;
 }
 
-header a .site-title {
+.site-title {
+  font-size: 15vw;
+  margin: 0;
   color: var(--main-color1);
-  text-decoration: none;
 }
 
-header a .site-subtitle {
+.site-subtitle {
   color: var(--main-color8);
   font-size: 6vw;
   margin: -0.5rem 0 0 0;
   transition: margin 100ms ease-in-out, padding 100ms ease-in-out;
 }
 
-header nav.navigation ul {
+/* navigation */
+.navigation ul {
   list-style: none;
   margin-top: 2rem;
   padding: 0;
   display: flex;
   justify-content: space-around;
   font-size: 6vw;
+  text-decoration: underline;
 }
 
-header nav.navigation ul li a {
+.navigation ul li a {
   color: var(--main-color9);
-  background: none;
   transition: text-shadow 100ms ease-in-out;
 }
-header nav.navigation ul li a:hover {
-  background: none;
+
+.navigation ul li a:hover {
   color: var(--main-color10);
   text-shadow: 0px 0px 10px rgba(201, 163, 216, 0.5);
 }
 
-main h3.page-title {
+/* individual pages */
+.page-title {
   font-style: normal;
   font-size: 7vw;
   margin-top: 0;
+  text-align: center;
 }
 
+/* footer */
 footer {
   margin-top: auto;
+  text-align: center;
 }
 
-footer p.footer-tagline {
-  font-size: 6vw;
-  color: var(--main-color11);
-  margin: 4rem 0 0;
+.tweetybird {
+  font-style: normal;
+  font-size: 4vw;
+  margin: 4rem 0 2rem 0;
+  animation: tweeter 3s infinite;
+  transform: rotate(45deg);
+  display: inline-block;
 }
 
-@keyframes heartbeat {
-  0% {
-    text-shadow: 0px 0px 0px rgba(255, 0, 0, 0);
-  }
-  50% {
-    text-shadow: 0px 0px 15px rgba(255, 0, 0, 1);
-  }
-  100% {
-    text-shadow: 0px 0px 0px rgba(255, 0, 0, 0);
-  }
-}
-
-footer p .heart {
-  padding-right: 0.4rem;
-  animation: heartbeat 1s infinite;
-}
-
-footer p .technology-highlight {
-  color: var(--main-color1);
-  transition: opacity 3s ease-in-out;
-  opacity: 1;
-}
-
+/* chirping bird */
 @keyframes tweeter {
   0% {
     transform: rotate(0deg);
@@ -164,16 +154,7 @@ footer p .technology-highlight {
   }
 }
 
-footer span.tweetybird {
-  font-style: normal;
-  font-size: 4vw;
-  margin: 4rem 0 2rem 0;
-  animation: tweeter 3s infinite;
-  transform: rotate(45deg);
-  display: inline-block;
-}
-
-/* PARTICLES */
+/* background particles */
 #canvas {
   position: absolute;
   display: block;
@@ -185,16 +166,16 @@ footer span.tweetybird {
 /* MEDIA QUERIES */
 
 @media (min-width: 600px) {
-  header a .site-title {
+  .site-title {
     font-size: 90px;
     margin: 0;
   }
 
-  header a .site-subtitle {
+  .site-subtitle {
     font-size: 36px;
   }
 
-  header nav.navigation ul {
+  .navigation ul {
     font-size: 36px;
     max-width: 750px;
     margin-left: auto;
@@ -203,13 +184,13 @@ footer span.tweetybird {
 }
 
 @media (min-width: 1000px) {
-  main h3.page-title {
+  .page-title {
     font-size: 70px;
   }
 }
 
 @media (min-width: 1200px) {
-  footer span.tweetybird {
+  .tweetybird {
     font-size: 48px;
   }
 }
