@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Daniel Bird - Student developer</title>
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../css/blog.css" />
+    <link rel="stylesheet" href="../../css/blog-post.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="Daniel Bird - Student developer" />
+    <meta property="og:description" content="My personal website and blog." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://danieldbird.github.io/" />
+    <meta property="og:image" content="https://danieldbird.github.io/images/site-preview.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../../js/script.js" defer></script>
+    <script src="../../js/particles.js" defer></script>
+  </head>
+
+  <body id="blog-post" class="blog-post">
+    <div class="wrapper">
+      <header>
+        <a href="/" class="logo-link">
+          <h1 class="site-title">Daniel Bird</h1>
+          <h2 class="site-subtitle">danieldbird.github.io</h2></a
+        >
+        <nav class="navigation">
+          <ul>
+            <li><a href="/pages/about.html">About</a></li>
+            <li><a href="/pages/projects.html">Things I've Done</a></li>
+            <li><a href="/pages/blog.html">Blog</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h3 class="page-title">Problem Solving</h3>
+        <p class="blog-date">19th February 2022</p>
+        <img src="../../images/problem-solving.svg" alt="Problem Solving" class="blog-hero" />
+        <div class="post-content">
+          <h4>How I approach a problem</h4>
+          <p>
+            When tackling a programming problem there are a lot of different methods I use to
+            solving the problem which I will discuss, but none are more important to me personally
+            that breaking the problem down into smaller, more achievable tasks.
+          </p>
+          <h4>Break it down</h4>
+          <p>
+            To make talking about solving a problem a little easier, lets identify a real-world
+            problem and solve it together step-by-step.
+          </p>
+          <p>
+            Let's for example, pretend we are trying to solve the problem of reversing a string.
+          </p>
+          <p>We are given this variable, and the rest is up to us.</p>
+          <p><code>const string = "!ereht olleH";</code></p>
+          <p>
+            Ok, so first we decide whether we want this code to be run immediately and used once, or
+            whether we want to make it a function so that if we ever need to reverse a string in the
+            future, we have this utility available.
+          </p>
+          <p>Let's make it a function.</p>
+          <pre><code>function reverseString() {
+ 
+}</code></pre>
+          <p>Done.</p>
+          <h4>Sanity Checking</h4>
+          <p>
+            Throughout every step of the process, I like to log the output, so we can compare the
+            expected output, to what is ACTUALLY being output.
+          </p>
+          <p>
+            This way, if we know we have the correct output at this stage, then anything that is
+            unexpected must be an issue with the most recent change.
+          </p>
+          <p>
+            This is much better than writing the entire solution at once, and then trying to find
+            where the issue is at the end.
+          </p>
+          <p>
+            It will need to accept a string to work on, lets do that next, and log out its contents.
+          </p>
+          <pre><code>function reverseString(string) {
+    console.log(string);
+
+// "!ereht olleH"
+}</code></pre>
+          <p>Awesome, we have the correct output at this stage.</p>
+          <h4>Keep it simple, stupid.</h4>
+          <p>Now we need to reverse this puppy.</p>
+          <p>
+            There are likely numerous ways to solve this problem, but we should always start with
+            the simplest, and move on from there.
+          </p>
+          <p>
+            The data-types in javascript come with some built-in methods, does the String data-type
+            come with a reversing function?
+          </p>
+          <p>I search Google for <code>javascript reverse string</code></p>
+          <p>
+            Bummer, simply looking at the results from Google, I can see there are no built-in
+            functions to reverse a string. (Lucky, because this would be a really short story
+            otherwise, and make our function unnecessary.)
+          </p>
+          <p>
+            What I do see on the same search results page is:
+            <code>Array.prototype.reverse()</code> on the
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse"
+              >Mozilla Developer Network (MDN)</a
+            >.
+          </p>
+          <p>
+            If we can cut up our string into an array and reverse it, and put it back together, that
+            might work? Lets search to see if it's possible.
+          </p>
+          <p>
+            I search Google for <code>javascript cut string into array</code> and also
+            <code>javascript join array</code>.
+          </p>
+          <p>
+            Wow, awesome the first results are <code>String.prototype.split()</code> on
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split"
+              >MDN</a
+            >, and <code>String.prototype.join()</code> on
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join"
+              >MDN</a
+            >.
+          </p>
+          <h4>Try things</h4>
+          <p>One thing at a time.</p>
+          <p>
+            Lets chop up our string into an array of characters, and again, do a sanity check by
+            logging it out.
+          </p>
+          <p>
+            We see from the documentation that the <code>.split()</code> method takes a string
+            argument of where we would like to split the string. If we wanted to split by spaces we
+            could pass in a space <code>' '</code>, but in this example we need every character to
+            have its own position in the array, spaces included. So our argument will be an empty
+            string <code>''</code>.
+          </p>
+          <pre><code>function reverseString(string) {
+    const charactersSplit = string.split('')
+    console.log(charactersSplit);
+
+// ['!','e','r','e','h','t',' ',
+// 'o','l','l','e','H']
+}</code></pre>
+          <p>
+            Sweeeeeeeet! Our sanity checking log tells us it worked and we are on the right track up
+            to this point.
+          </p>
+          <p>
+            Now we can tackle the reversing! Lets apply that <code>.reverse()</code> method we read
+            about in the documentation, and see what happens.
+          </p>
+          <pre><code>function reverseString(string) {
+    const charactersSplit = string.split('')
+    const charactersReversed = charactersSplit.reverse();
+    console.log(charactersReversed);
+
+// ['H','e','l','l','o',' ',
+// 't','h','e','r','e','!']
+}</code></pre>
+          <p>Ho boy, that works! And from the log we can make out the words.</p>
+          <p>
+            We are almost done now. We just need to join the array back together and return the
+            output.
+          </p>
+          <p>
+            We see from the documentation, that just like the <code>.split()</code> method, we can
+            provide it a string to separate each item of the array when joining it back together. In
+            this case we just want it back the way it was with no alterations, so we pass it another
+            empty string <code>''</code>.
+          </p>
+          <p>Lets try that now.</p>
+          <pre><code>function reverseString(string) {
+    const charactersSplit = string.split('')
+    const charactersReversed = charactersSplit.reverse();
+    const charactersJoined = charactersReversed.join('');
+    console.log(charactersJoined);
+        
+// Hello there!
+}</code></pre>
+          <p>
+            It works! now the only thing left to do to make this function, er, functional, is to
+            return the value instead of logging it to the console!
+          </p>
+          <pre><code>function reverseString(string) {
+  const charactersSplit = string.split('')
+  const charactersReversed = charactersSplit.reverse();
+  const charactersJoined = charactersReversed.join('');
+  return charactersJoined;
+}</code></pre>
+          <p>..Aaaaaaaannd done!</p>
+          <h4>Other problem solving methods</h4>
+          <p>If you are ever stuck on a problem there are other useful methods to help you.</p>
+          <h5>Pseudocode</h5>
+          <p>
+            Write out the steps of the problem in plain english to give you an idea of where to
+            start, and a progression through the problem.
+          </p>
+          <h5>The rubber ducky method</h5>
+          <p>
+            Explain the problem to yourself, or somebody else. As you talk through the problem you
+            force yourself to step through it, and possibly explain it in a simpler way that might
+            trigger a solution for yourself.
+          </p>
+          <h5>Ask for help</h5>
+          <p>There is no shame in asking for help.</p>
+          <p>
+            I like to remember that everything we know is the result of being taught by somebody or
+            something.
+          </p>
+          <p>
+            It is often so much more productive to ask somebody for help rather than working on the
+            same problem for hours without progressing.
+          </p>
+          <p>
+            Your time could be better spent working on something else, without trying to reinvent
+            the wheel.
+          </p>
+        </div>
+      </main>
+      <footer>
+        <span class="tweetybird">🐤</span>
+      </footer>
+    </div>
+    <canvas id="canvas"></canvas>
+  </body>
+</html>
