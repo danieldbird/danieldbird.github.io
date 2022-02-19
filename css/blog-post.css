@@ -1,5 +1,5 @@
 #blog-post main {
-  text-align: left;
+  /* text-align: left; */
   max-width: 900px;
   margin: 0 auto;
   padding: 0 2rem;
@@ -36,18 +36,6 @@
   text-align: left;
 }
 
-#blog-post main .post-content p {
-  margin: 0.75rem 0 0.75rem;
-}
-
-#blog-post main .post-content p a {
-  color: var(--main-color5);
-}
-
-#blog-post main .post-content p a:hover {
-  color: var(--main-color4);
-}
-
 #blog-post main .post-content h4 {
   font-size: 5vw;
   color: var(--main-color6);
@@ -62,24 +50,6 @@
   text-decoration: underline;
   font-weight: bold;
   margin: 1rem 0 0.5rem;
-}
-
-#blog-post main .post-content code {
-  color: var(--main-color7);
-  background: var(--main-color6);
-  padding: 0.25rem 0.25rem;
-  margin: 0;
-  white-space: nowrap;
-}
-
-.post-content blockquote {
-  background: var(--main-color8);
-  font-style: italic;
-  padding: 0.5rem;
-  color: var(--main-color2);
-  display: inline-block;
-  border-left: 5px solid var(--main-color6);
-  margin: 0.5rem 1rem;
 }
 
 /* MEDIA QUERIES */
