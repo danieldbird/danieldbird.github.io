@@ -1,7 +1,5 @@
 const technologies = ["HTML", "CSS", "Javascript"];
-
 const technologyElement = document.querySelector(".technology-highlight");
-
 technologyElement.innerHTML = technologies[0];
 
 let counter = 1;
@@ -15,5 +13,3 @@ setInterval(() => {
     counter++;
   }
 }, 2000);
-
-console.log(technologyElement);

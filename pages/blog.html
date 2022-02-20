@@ -2,9 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="theme-color" content="#000" />
     <title>Daniel Bird - Student developer</title>
     <link rel="stylesheet" href="../css/global.css" />
-    <link rel="stylesheet" href="../css/blog.css" />
+    <link rel="stylesheet" href="../css/posts.css" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:title" content="Daniel Bird - Student developer" />
@@ -19,150 +20,118 @@
       href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@1,700;1,800&display=swap"
       rel="stylesheet"
     />
-    <script src="../js/script.js" defer></script>
+    <script src="../js/toTopBtn.js" defer></script>
     <script src="../js/particles.js" defer></script>
   </head>
 
-  <body id="blog" class="blog">
-    <div class="wrapper">
-      <header>
-        <a href="/" class="logo-link">
-          <h1 class="site-title">Daniel Bird</h1>
-          <h2 class="site-subtitle">danieldbird.github.io</h2></a
-        >
-        <nav class="navigation">
-          <ul>
-            <li><a href="/pages/about.html">About</a></li>
-            <li><a href="/pages/projects.html">Things I've Done</a></li>
-            <li><a href="/pages/blog.html">Blog</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <h3 class="page-title">👨🏽‍💻</h3>
-        <div class="blog-posts">
-          <a href="../posts/blogs/problem-solving.html">
-            <div class="blog-post">
-              <div class="blog-image">
-                <img src="/images/problem-solving.svg" alt="Problem Solving" />
-              </div>
-              <div class="blog-details">
-                <h4 class="blog-title">Problem Solving</h4>
-                <p class="blog-date">19th February 2022</p>
-                <p class="blog-excerpt">
-                  How I approach solving seemingly difficult problems in programming.
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="../posts/blogs/growth-mindset.html">
-            <div class="blog-post">
-              <div class="blog-image">
-                <img src="/images/growth-mindset.jpg" alt="Growth Mindset" />
-              </div>
-              <div class="blog-details">
-                <h4 class="blog-title">Growth Mindset</h4>
-                <p class="blog-date">16th February 2022</p>
-                <p class="blog-excerpt">
-                  Let's discuss what it means to have a growth mindset, and the impact that this can
-                  have.
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="../posts/blogs/neuroplasticity.html">
-            <div class="blog-post">
-              <div class="blog-image">
-                <img src="/images/neuroplasticity.jpg" alt="Neuroplasticity" />
-              </div>
-              <div class="blog-details">
-                <h4 class="blog-title">Neuroplasticity</h4>
-                <p class="blog-date">15th February 2022</p>
-                <p class="blog-excerpt">
-                  Your abilities, intelligence, or talents are NOT fixed traits. They can be
-                  practised and improved over time.
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="../posts/blogs/javascript-dom.html">
-            <div class="blog-post">
-              <div class="blog-image">
-                <img src="/images/javascript-dom.jpg" alt="Javascript DOM" />
-              </div>
-              <div class="blog-details">
-                <h4 class="blog-title">Javascript DOM</h4>
-                <p class="blog-date">14th February 2022</p>
-                <p class="blog-excerpt">
-                  Here we take a look at the DOM, control flow, loops and functions.
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="../posts/blogs/emotional-intelligence.html">
-            <div class="blog-post">
-              <div class="blog-image">
-                <img src="/images/emotional-intelligence.svg" alt="Emotional Intelligence" />
-              </div>
-              <div class="blog-details">
-                <h4 class="blog-title">Emotional Intelligence</h4>
-                <p class="blog-date">9th February 2022</p>
-                <p class="blog-excerpt">
-                  Sometimes referred to as EQ, or EI, it is a persons ability to observe their own
-                  emotions.
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="../posts/blogs/padding-border-margin.html">
-            <div class="blog-post">
-              <div class="blog-image">
-                <img src="/images/pbm.svg" alt="Padding, Border, Margin" />
-              </div>
-              <div class="blog-details">
-                <h4 class="blog-title">Padding, Border, and Margin</h4>
-                <p class="blog-date">7th February 2022</p>
-                <p class="blog-excerpt">
-                  In this blog post, we will review what margin, border, and padding are, and how
-                  they differ from one another.
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="../posts/blogs/learning-plan.html">
-            <div class="blog-post">
-              <div class="blog-image">
-                <img src="/images/learning-plan.svg" alt="Learning Plan" />
-              </div>
-              <div class="blog-details">
-                <h4 class="blog-title">Learning Plan</h4>
-                <p class="blog-date">6th February 2022</p>
-                <p class="blog-excerpt">
-                  This is an overview of how I will navigate my approach to learning at Dev Academy.
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="../posts/blogs/identity-values.html">
-            <div class="blog-post">
-              <div class="blog-image">
-                <img src="/images/baby-photo.jpg" alt="Identity Values" />
-              </div>
-              <div class="blog-details">
-                <h4 class="blog-title">Identity Values</h4>
-                <p class="blog-date">4th February 2022</p>
-                <p class="blog-excerpt">
-                  The hope is to leave this world a better place than I found it.
-                </p>
-              </div>
-            </div>
-          </a>
+  <body>
+    <header>
+      <a href="/" class="logo-link">
+        <h1 class="site-title">Daniel Bird</h1>
+        <h2 class="site-subtitle">danieldbird.github.io</h2></a
+      >
+      <nav class="navigation">
+        <ul>
+          <li><a href="/pages/about.html">About</a></li>
+          <li><a href="/pages/projects.html">Things I've Done</a></li>
+          <li><a href="/pages/blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="page-title">👨🏽‍💻</div>
+    <main class="posts">
+      <a class="posts-post" href="../posts/blogs/problem-solving.html">
+        <img class="posts-image" src="/images/problem-solving.svg" alt="Problem Solving" />
+        <div class="posts-details">
+          <h4 class="posts-title">Problem Solving</h4>
+          <p class="posts-date">19th February 2022</p>
+          <p class="posts-excerpt">
+            How I approach solving seemingly difficult problems in programming.
+          </p>
         </div>
-      </main>
-      <footer>
-        <span class="tweetybird">🐤</span>
-      </footer>
-    </div>
+      </a>
+      <a class="posts-post" href="../posts/blogs/growth-mindset.html">
+        <img class="posts-image" src="/images/growth-mindset.jpg" alt="Growth Mindset" />
+        <div class="posts-details">
+          <h4 class="posts-title">Growth Mindset</h4>
+          <p class="posts-date">16th February 2022</p>
+          <p class="posts-excerpt">
+            Let's discuss what it means to have a growth mindset, and the impact that this can have.
+          </p>
+        </div>
+      </a>
+      <a class="posts-post" href="../posts/blogs/neuroplasticity.html">
+        <img class="posts-image" src="/images/neuroplasticity.jpg" alt="Neuroplasticity" />
+        <div class="posts-details">
+          <h4 class="posts-title">Neuroplasticity</h4>
+          <p class="posts-date">15th February 2022</p>
+          <p class="posts-excerpt">
+            Your abilities, intelligence, or talents are NOT fixed traits. They can be practised and
+            improved over time.
+          </p>
+        </div>
+      </a>
+      <a class="posts-post" href="../posts/blogs/javascript-dom.html">
+        <img class="posts-image" src="/images/javascript-dom.jpg" alt="Javascript DOM" />
+        <div class="posts-details">
+          <h4 class="posts-title">Javascript DOM</h4>
+          <p class="posts-date">14th February 2022</p>
+          <p class="posts-excerpt">
+            Here we take a look at the DOM, control flow, loops and functions.
+          </p>
+        </div>
+      </a>
+      <a class="posts-post" href="../posts/blogs/emotional-intelligence.html">
+        <img
+          class="posts-image"
+          src="/images/emotional-intelligence.svg"
+          alt="Emotional Intelligence"
+        />
+        <div class="posts-details">
+          <h4 class="posts-title">Emotional Intelligence</h4>
+          <p class="posts-date">9th February 2022</p>
+          <p class="posts-excerpt">
+            Sometimes referred to as EQ, or EI, it is a persons ability to observe their own
+            emotions.
+          </p>
+        </div>
+      </a>
+      <a class="posts-post" href="../posts/blogs/padding-border-margin.html">
+        <img class="posts-image" src="/images/pbm.svg" alt="Padding, Border, Margin" />
+        <div class="posts-details">
+          <h4 class="posts-title">Padding, Border, and Margin</h4>
+          <p class="posts-date">7th February 2022</p>
+          <p class="posts-excerpt">
+            In this blog post, we will review what margin, border, and padding are, and how they
+            differ from one another.
+          </p>
+        </div>
+      </a>
+      <a class="posts-post" href="../posts/blogs/learning-plan.html">
+        <img class="posts-image" src="/images/learning-plan.svg" alt="Learning Plan" />
+        <div class="posts-details">
+          <h4 class="posts-title">Learning Plan</h4>
+          <p class="posts-date">6th February 2022</p>
+          <p class="posts-excerpt">
+            This is an overview of how I will navigate my approach to learning at Dev Academy.
+          </p>
+        </div>
+      </a>
+      <a class="posts-post" href="../posts/blogs/identity-values.html">
+        <img class="posts-image" src="/images/baby-photo.jpg" alt="Identity Values" />
+        <div class="posts-details">
+          <h4 class="posts-title">Identity Values</h4>
+          <p class="posts-date">4th February 2022</p>
+          <p class="posts-excerpt">
+            The hope is to leave this world a better place than I found it.
+          </p>
+        </div>
+      </a>
+    </main>
+    <footer>
+      <span class="tweetybird">🐤</span>
+    </footer>
+    <div class="scrollToTopBtn"></div>
     <canvas id="canvas"></canvas>
   </body>
 </html>

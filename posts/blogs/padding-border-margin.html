@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="theme-color" content="#000" />
     <title>Daniel Bird - Student developer</title>
     <link rel="stylesheet" href="../../css/global.css" />
-    <link rel="stylesheet" href="../../css/blog.css" />
-    <link rel="stylesheet" href="../../css/blog-post.css" />
+    <link rel="stylesheet" href="../../css/post.css" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:title" content="Daniel Bird - Student developer" />
@@ -20,128 +20,91 @@
       href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@1,700;1,800&display=swap"
       rel="stylesheet"
     />
-    <script src="../../js/script.js" defer></script>
+    <script src="../../js/toTopBtn.js" defer></script>
     <script src="../../js/particles.js" defer></script>
-    <style>
-      .illustration {
-        width: 100%;
-        /* text-align: center; */
-      }
-      .illustration img {
-        width: 100px;
-      }
-      .illustration img.pbm-img-content {
-        width: 80px;
-      }
-      .illustration img.pbm-img-padding {
-        width: 110px;
-      }
-      .illustration img.pbm-img-border {
-        width: 115px;
-      }
-      .illustration img.pbm-img-margin {
-        width: 135px;
-      }
-    </style>
   </head>
 
-  <body id="blog-post" class="blog-post">
-    <div class="wrapper">
-      <header>
-        <a href="/" class="logo-link">
-          <h1 class="site-title">Daniel Bird</h1>
-          <h2 class="site-subtitle">danieldbird.github.io</h2></a
-        >
-        <nav class="navigation">
-          <ul>
-            <li><a href="/pages/about.html">About</a></li>
-            <li><a href="/pages/projects.html">Things I've Done</a></li>
-            <li><a href="/pages/blog.html">Blog</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <h3 class="page-title">Padding, Border, and Margin</h3>
-        <p class="blog-date">7th February 2022</p>
-        <img src="../../images/pbm.svg" alt="Margin, Border, and Padding" class="blog-hero" />
-        <div class="post-content">
-          <p>
-            In web development, everything displayed on a page is surrounded by an invisible box.
-          </p>
-          <p>
-            This is referred to as the
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model"
-              alt="Box Model External Link"
-              target="_blank"
-              >box model</a
-            >.
-          </p>
-          <p class="center">
-            Inside of these simple boxes is all of the content that makes up the web.
-          </p>
-          <p>
-            In the following examples we will pretend we are wrapping our content in either a
-            generic <code>&lt;div&gt;</code> or generic <code>&lt;span&gt;</code> tag. <br />Unlike
-            other tags, these do not come with any padding, border or margin applied by default.
-          </p>
-
-          <p>Let’s start from the inside out.</p>
-          <h4>Content</h4>
-          <div class="illustration">
-            <img src="../../images/pbm-content.svg" alt="Content" class="pbm-img-content" />
-          </div>
-          <p>
-            In the centre is the content to be displayed. This can be anything. Text, an image, a
-            video, and so on. Without any styling applied, the invisible box is wrapped tightly
-            around your content. With no spacing between what is inside the box, no spacing between
-            what is outside the box, and no visible border.
-          </p>
-          <h4>Padding</h4>
-          <div class="illustration">
-            <img src="../../images/pbm-padding.svg" alt="Padding" class="pbm-img-padding" />
-          </div>
-          <p>
-            Outside of the content, you have the padding. Padding is what separates the content from
-            the box it is in, and therefore the border. You can not have a negative amount of
-            padding. Any background applied to the box will show up in the padding area. The padding
-            can be set individually, or using shorthand clockwise notation.
-          </p>
-          <h4>Border</h4>
-          <div class="illustration">
-            <img src="../../images/pbm-border.svg" alt="Border" class="pbm-img-border" />
-          </div>
-          <p>
-            On the outside of the padding is the border. It sits between the padding and the margin.
-            The border property values that can be set on a border are size, style and colour. Each
-            side of a box can have different border property values.
-          </p>
-          <h4>Margin</h4>
-          <div class="illustration">
-            <img src="../../images/pbm-margin.svg" alt="Margin" class="pbm-img-margin" />
-          </div>
-          <p>
-            Lastly, on the outside of the border is the margin. This can be thought of as invisible
-            space outside of the box, and it pushes the box away from elements on the outside.
-            Because any background is only applied to the box and it’s padding, it will not show up
-            in the margin. A margin can have a positive or negative value, which means it is able to
-            overlap other elements if required. The margin can be set individually, or using
-            shorthand clockwise notation.
-          </p>
-          <h4>Box Sizing</h4>
-          <p>
-            If you are using the default box-model <code>box-sizing: content-box;</code>, both the
-            padding and border will be counted towards the width and height of the box. If you
-            prefer a simpler method, you can use <code>box-sizing: border-box;</code>, so you can
-            set your width and height as you would like, and the calculation to minus the padding
-            and border is done for you automatically.
-          </p>
-        </div>
-      </main>
-      <footer>
-        <span class="tweetybird">🐤</span>
-      </footer>
-    </div>
+  <body>
+    <header>
+      <a href="/" class="logo-link">
+        <h1 class="site-title">Daniel Bird</h1>
+        <h2 class="site-subtitle">danieldbird.github.io</h2></a
+      >
+      <nav class="navigation">
+        <ul>
+          <li><a href="/pages/about.html">About</a></li>
+          <li><a href="/pages/projects.html">Things I've Done</a></li>
+          <li><a href="/pages/blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="post">
+      <h1 class="post-title">Padding, Border, and Margin</h1>
+      <div class="post-date">7th February 2022</div>
+      <img src="../../images/pbm.svg" alt="Margin, Border, and Padding" class="post-image" />
+      <p>In web development, everything displayed on a page is surrounded by an invisible box.</p>
+      <p>
+        This is referred to as the
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model"
+          alt="Box Model External Link"
+          target="_blank"
+          >box model</a
+        >.
+      </p>
+      <p>Inside of these simple boxes is all of the content that makes up the web.</p>
+      <p>
+        In the following examples we will pretend we are wrapping our content in either a generic
+        <code>&lt;div&gt;</code> or generic <code>&lt;span&gt;</code> tag. <br />Unlike other tags,
+        these do not come with any padding, border or margin applied by default.
+      </p>
+      <p>Let’s start from the inside out.</p>
+      <h2>Content</h2>
+      <img src="../../images/pbm-content.svg" alt="Content" class="illustration-md" />
+      <p>
+        In the centre is the content to be displayed. This can be anything. Text, an image, a video,
+        and so on. Without any styling applied, the invisible box is wrapped tightly around your
+        content. With no spacing between what is inside the box, no spacing between what is outside
+        the box, and no visible border.
+      </p>
+      <h2>Padding</h2>
+      <img src="../../images/pbm-padding.svg" alt="Padding" class="illustration-md" />
+      <p>
+        Outside of the content, you have the padding. Padding is what separates the content from the
+        box it is in, and therefore the border. You can not have a negative amount of padding. Any
+        background applied to the box will show up in the padding area. The padding can be set
+        individually, or using shorthand clockwise notation.
+      </p>
+      <h2>Border</h2>
+      <img src="../../images/pbm-border.svg" alt="Border" class="illustration-md" />
+      <p>
+        On the outside of the padding is the border. It sits between the padding and the margin. The
+        border property values that can be set on a border are size, style and colour. Each side of
+        a box can have different border property values.
+      </p>
+      <h2>Margin</h2>
+      <img src="../../images/pbm-margin.svg" alt="Margin" class="illustration-md" />
+      <p>
+        Lastly, on the outside of the border is the margin. This can be thought of as invisible
+        space outside of the box, and it pushes the box away from elements on the outside. Because
+        any background is only applied to the box and it’s padding, it will not show up in the
+        margin. A margin can have a positive or negative value, which means it is able to overlap
+        other elements if required. The margin can be set individually, or using shorthand clockwise
+        notation.
+      </p>
+      <h2>Box Sizing</h2>
+      <p>
+        If you are using the default box-model <code>box-sizing: content-box;</code>, both the
+        padding and border will be counted towards the width and height of the box. If you prefer a
+        simpler method, you can use <code>box-sizing: border-box;</code>, so you can set your width
+        and height as you would like, and the calculation to minus the padding and border is done
+        for you automatically.
+      </p>
+    </main>
+    <footer>
+      <span class="tweetybird">🐤</span>
+    </footer>
+    <div class="scrollToTopBtn"></div>
     <canvas id="canvas"></canvas>
   </body>
 </html>

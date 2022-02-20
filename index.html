@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="theme-color" content="#000" />
     <title>Daniel Bird - Student developer</title>
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/home.css" />
@@ -19,40 +20,41 @@
       href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@1,700;1,800&display=swap"
       rel="stylesheet"
     />
-    <script src="./js/script.js" defer></script>
+    <script src="../js/toTopBtn.js" defer></script>
+    <script src="./js/techHighlight.js" defer></script>
     <script src="./js/particles.js" defer></script>
   </head>
-  <body id="home" class="home">
-    <div class="wrapper">
-      <header>
-        <a href="/" class="logo-link">
-          <h1 class="site-title">Daniel Bird</h1>
-          <h2 class="site-subtitle">danieldbird.github.io</h2></a
-        >
-        <nav class="navigation">
-          <ul>
-            <li><a href="/pages/about.html">About</a></li>
-            <li><a href="/pages/projects.html">Things I've Done</a></li>
-            <li><a href="/pages/blog.html">Blog</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main class="hero">
-        <img src="./images/profile.png" alt="Profile" class="hero-img" />
-        <h3>
-          I'm a student web developer in<br />
-          Auckland, New Zealand.
-        </h3>
-      </main>
-      <footer>
-        <p class="footer-tagline">
-          I <span class="heart">❤️</span> to build things with <br />
-          <span class="technology-highlight"></span><br />
-          and my hands.
-        </p>
-        <span class="tweetybird">🐤</span>
-      </footer>
-    </div>
+
+  <body>
+    <header>
+      <a href="/" class="logo-link">
+        <h1 class="site-title">Daniel Bird</h1>
+        <h2 class="site-subtitle">danieldbird.github.io</h2></a
+      >
+      <nav class="navigation">
+        <ul>
+          <li><a href="/pages/about.html">About</a></li>
+          <li><a href="/pages/projects.html">Things I've Done</a></li>
+          <li><a href="/pages/blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="hero">
+      <img src="./images/profile.png" alt="Profile" class="hero-img" />
+      <h3 class="hero-tagline">
+        I'm a student web developer in<br />
+        Auckland, New Zealand.
+      </h3>
+    </main>
+    <footer>
+      <h4 class="footer-tagline">
+        I <span class="heart">❤️</span> to build things with <br />
+        <span class="technology-highlight"></span><br />
+        and my hands.
+      </h4>
+      <span class="tweetybird">🐤</span>
+    </footer>
+    <div class="scrollToTopBtn"></div>
     <canvas id="canvas"></canvas>
   </body>
 </html>

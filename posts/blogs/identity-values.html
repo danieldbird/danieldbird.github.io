@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="theme-color" content="#000" />
     <title>Daniel Bird - Student developer</title>
     <link rel="stylesheet" href="../../css/global.css" />
-    <link rel="stylesheet" href="../../css/blog.css" />
-    <link rel="stylesheet" href="../../css/blog-post.css" />
+    <link rel="stylesheet" href="../../css/post.css" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:title" content="Daniel Bird - Student developer" />
@@ -20,108 +20,98 @@
       href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@1,700;1,800&display=swap"
       rel="stylesheet"
     />
-    <script src="../../js/script.js" defer></script>
+    <script src="../../js/toTopBtn.js" defer></script>
     <script src="../../js/particles.js" defer></script>
   </head>
 
-  <body id="blog-post" class="blog-post">
-    <div class="wrapper">
-      <header>
-        <a href="/" class="logo-link">
-          <h1 class="site-title">Daniel Bird</h1>
-          <h2 class="site-subtitle">danieldbird.github.io</h2></a
-        >
-        <nav class="navigation">
-          <ul>
-            <li><a href="/pages/about.html">About</a></li>
-            <li><a href="/pages/projects.html">Things I've Done</a></li>
-            <li><a href="/pages/blog.html">Blog</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <h3 class="page-title">Identity Values</h3>
-        <p class="blog-date">4th February 2022</p>
-        <img
-          src="../../images/baby-photo.jpg"
-          alt="Margin, Border, and Padding"
-          class="blog-hero"
-        />
-        <div class="post-content">
-          <p>Hi there, my name is Daniel Bird.</p>
-          <p>I was born in Ipswich, Queensland.</p>
-          <p>
-            I grew up in Melbourne, Victoria and travelled to and from a small outback town called
-            Coober Pedy, in South Australia every school holidays to visit my mother and two
-            sisters.
-          </p>
-          <p>
-            I have been living in Auckland for approximately 10 years now with my wife and daughter.
-            It’s a great place to be, it feels laid back, and has an island vibe to me. I have never
-            really given a lot of thought to values and identity, but I will give it a go.
-          </p>
-          <p>
-            I guess I could say I’ve always struggled with a sense of personal identity. As a young
-            child my mother and father divorced and I travelled around a lot. I have never felt like
-            I truly belonged anywhere really. Everyone else seemed to have a strong sense of
-            personal identity and / or national identity. Which I struggled with as a child, but
-            have come to accept and see as somewhat of a positive.
-          </p>
-          <p>
-            I realised early on that the location I was born, to what parents I was born, my gender,
-            my sexual preferences, the amount of melanin in my skin, was all chance, non of my
-            doing, and the same for everyone else. Having that mindset, it has just never made
-            logical sense to dislike somebody based on these characteristics. This has definitely
-            shaped my personal values. That everybody is equal, and we all deserve the same
-            opportunity.
-          </p>
-          <p>
-            Luck, in my opinion should never factor in to available opportunities, or the way
-            somebody is treated. Being a dick, yes, luck, no.
-          </p>
-          <p>
-            My values were shaped heavily by my father, he was a mensch, and I miss him. I learnt
-            the value of being eclectic in life. Not shutting yourself off to experiences, and
-            taking the best from everything you come across. A little Buddhism here, a touch of
-            Martin Luther King Jr there, something you read in a book here etc.. not to get trapped
-            in, and forced to accept the dogma of one thing.
-          </p>
-          <p>
-            My mother is extremely charitable to a fault, so I learned kindness and deep empathetic
-            connection from her.
-          </p>
-          <p>
-            I have struggled with anxiety in the past which has held me back a lot. There has always
-            been a voice in the back of my head reminding me of the worst possible outcome of every
-            situation which isn’t a great confidence booster. I have managed to accept and embrace
-            it as I got older though. It has been a useful tool for planning, and preparedness. I
-            have built a successful business here in Auckland, so I know as much as I think it is a
-            negative, it is operable.
-          </p>
-          <p>Oh lordy, this is getting long.. Wrap it up Daniel.</p>
-          <p>
-            I’m attending this Dev Academy because I have learnt a lot in development over the
-            years, but have never had any formal training, and felt like there were gaps in my
-            knowledge. I want to be the best version of myself, for myself, and for my family. I
-            know I can do more, be more, and challenge myself more in life.
-          </p>
-          <p>
-            My dream would be to meet like-minded individuals that have the same passion and drive
-            to build things and businesses as me. Somebody who is better in front of an audience
-            than I.
-          </p>
-          <p>
-            To work hard and build something together. If it doesn’t work, figure out why, iterate,
-            and try new projects until we have something.
-          </p>
-          <p>Anyway, that’s me. Apologies for the novella.</p>
-          <p>I look forward to meeting you all and wish everyone the very best! ❤️</p>
-        </div>
-      </main>
-      <footer>
-        <span class="tweetybird">🐤</span>
-      </footer>
-    </div>
+  <body>
+    <header>
+      <a href="/" class="logo-link">
+        <h1 class="site-title">Daniel Bird</h1>
+        <h2 class="site-subtitle">danieldbird.github.io</h2></a
+      >
+      <nav class="navigation">
+        <ul>
+          <li><a href="/pages/about.html">About</a></li>
+          <li><a href="/pages/projects.html">Things I've Done</a></li>
+          <li><a href="/pages/blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="post">
+      <h1 class="post-title">Identity Values</h1>
+      <div class="post-date">4th February 2022</div>
+      <img src="../../images/baby-photo.jpg" alt="Margin, Border, and Padding" class="post-image" />
+      <p>Hi there, my name is Daniel Bird.</p>
+      <p>I was born in Ipswich, Queensland.</p>
+      <p>
+        I grew up in Melbourne, Victoria and travelled to and from a small outback town called
+        Coober Pedy, in South Australia every school holidays to visit my mother and two sisters.
+      </p>
+      <p>
+        I have been living in Auckland for approximately 10 years now with my wife and daughter.
+        It's a great place to be, it feels laid back, and has an island vibe to me. I have never
+        really given a lot of thought to values and identity, but I will give it a go.
+      </p>
+      <p>
+        I guess I could say I've always struggled with a sense of personal identity. As a young
+        child my mother and father divorced and I travelled around a lot. I have never felt like I
+        truly belonged anywhere really. Everyone else seemed to have a strong sense of personal
+        identity and / or national identity. Which I struggled with as a child, but have come to
+        accept and see as somewhat of a positive.
+      </p>
+      <p>
+        I realised early on that the location I was born, to what parents I was born, my gender, my
+        sexual preferences, the amount of melanin in my skin, was all chance, non of my doing, and
+        the same for everyone else. Having that mindset, it has just never made logical sense to
+        dislike somebody based on these characteristics. This has definitely shaped my personal
+        values. That everybody is equal, and we all deserve the same opportunity.
+      </p>
+      <p>
+        Luck, in my opinion should never factor in to available opportunities, or the way somebody
+        is treated. Being a dick, yes, luck, no.
+      </p>
+      <p>
+        My values were shaped heavily by my father, he was a mensch, and I miss him. I learnt the
+        value of being eclectic in life. Not shutting yourself off to experiences, and taking the
+        best from everything you come across. A little Buddhism here, a touch of Martin Luther King
+        Jr there, something you read in a book here etc.. not to get trapped in, and forced to
+        accept the dogma of one thing.
+      </p>
+      <p>
+        My mother is extremely charitable to a fault, so I learned kindness and deep empathetic
+        connection from her.
+      </p>
+      <p>
+        I have struggled with anxiety in the past which has held me back a lot. There has always
+        been a voice in the back of my head reminding me of the worst possible outcome of every
+        situation which isn't a great confidence booster. I have managed to accept and embrace it as
+        I got older though. It has been a useful tool for planning, and preparedness. I have built a
+        successful business here in Auckland, so I know as much as I think it is a negative, it is
+        operable.
+      </p>
+      <p>Oh lordy, this is getting long.. Wrap it up Daniel.</p>
+      <p>
+        I'm attending this Dev Academy because I have learnt a lot in development over the years,
+        but have never had any formal training, and felt like there were gaps in my knowledge. I
+        want to be the best version of myself, for myself, and for my family. I know I can do more,
+        be more, and challenge myself more in life.
+      </p>
+      <p>
+        My dream would be to meet like-minded individuals that have the same passion and drive to
+        build things and businesses as me. Somebody who is better in front of an audience than I.
+      </p>
+      <p>
+        To work hard and build something together. If it doesn't work, figure out why, iterate, and
+        try new projects until we have something.
+      </p>
+      <p>Anyway, that's me. Apologies for the novella.</p>
+      <p>I look forward to meeting you all and wish everyone the very best! ❤️</p>
+    </main>
+    <footer>
+      <span class="tweetybird">🐤</span>
+    </footer>
+    <div class="scrollToTopBtn"></div>
     <canvas id="canvas"></canvas>
   </body>
 </html>
