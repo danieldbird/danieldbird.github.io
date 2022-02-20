@@ -8,6 +8,11 @@
   padding: 0 2rem;
 }
 
+.posts-post:hover > .posts-details > .posts-title {
+  color: var(--light);
+  padding-left: 0.75rem;
+}
+
 .posts-post {
   display: flex;
   flex-direction: row;
@@ -20,7 +25,7 @@
   height: 30vw;
   max-width: 170px;
   max-height: 170px;
-  border-radius: 1.5rem;
+  border-radius: 1.25rem;
   object-fit: cover;
   padding: 1rem 1rem;
 }
@@ -35,15 +40,16 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   overflow: hidden;
+  transition: padding 300ms ease-in-out;
 }
 
 .posts-date {
   color: var(--light);
   font-size: 2.5vw;
-  margin: 0;
+  margin: 0.25rem 1rem 0;
   font-style: italic;
   text-transform: capitalize;
-  padding: 0.25rem 1rem 0;
+  padding: 0;
 }
 
 .posts-excerpt {
