@@ -25,12 +25,12 @@ window.addEventListener("resize", () => {
 });
 
 // set defaults
-const amount = 500;
+const amount = 800;
 const minSize = 1;
 const maxSize = 3;
 const minVel = 0.1;
 const maxVel = 0.5;
-const minAlpha = 0.5;
+const minAlpha = 0.1;
 const maxAlpha = 1;
 const color = "#a363bb";
 const particles = [];
@@ -52,6 +52,7 @@ const getRandomVelocity = (posOrNeg) => {
       return Number(-getRandomFloat(minVel, maxVel));
     }
   } else {
+    // set a 50/50 chance it will be a positive or negative value
     if (Math.random() < 0.5) {
       return Number(-getRandomFloat(minVel, maxVel));
     }
