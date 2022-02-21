@@ -42,7 +42,7 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   overflow: hidden;
-  transition: margin 250ms ease-in-out;
+  transition: margin 100ms ease-in-out;
 }
 
 .posts-date {
