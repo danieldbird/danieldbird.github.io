@@ -2,7 +2,7 @@
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 /*** colour variables */
@@ -36,17 +36,21 @@
     "Open Sans", "Helvetica Neue", sans-serif;
   text-align: center;
   color: var(--lightest);
+}
+
+html,
+body {
+  width: 100%;
   height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  max-width: 1000px;
-  margin: 0 auto;
   background-image: var(--default-gradient);
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 
 /* header */
@@ -166,12 +170,14 @@ pre {
 /* footer */
 footer {
   margin-top: auto;
+  padding: 1rem;
 }
 
 .tweetybird {
   font-style: normal;
   font-size: 4vw;
-  margin: 4rem 0 2rem 0;
+  margin: 6rem 0 2rem 0;
+  line-height: 0;
   animation: tweeter 3s infinite;
   transform: rotate(45deg);
   display: inline-block;
@@ -248,8 +254,6 @@ footer {
   top: 0;
   left: 0;
   z-index: -1;
-  display: block;
-  width: 100%;
 }
 
 /* media queries */
