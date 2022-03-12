@@ -110,7 +110,6 @@ img {
 
 ul {
   list-style: square;
-  color: var(--darker);
 }
 
 p > a {

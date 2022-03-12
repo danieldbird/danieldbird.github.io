@@ -58,6 +58,14 @@
   margin: 1rem 0;
 }
 
+.post > ul {
+  margin: 0;
+}
+
+.post > ul > li {
+  line-height: 1.75rem;
+}
+
 /* media queries */
 @media (min-width: 600px) {
   .post-title {

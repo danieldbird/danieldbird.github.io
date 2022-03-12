@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#000" />
+    <title>Daniel Bird - Student developer</title>
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../css/post.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="Daniel Bird - Student developer" />
+    <meta property="og:description" content="My personal website and blog." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://danieldbird.github.io/" />
+    <meta property="og:image" content="https://danieldbird.github.io/images/site-preview.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../../js/toTopBtn.js" defer></script>
+    <script src="../../js/particles.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <a href="/" class="logo-link">
+        <h1 class="site-title">Daniel Bird</h1>
+        <h2 class="site-subtitle">danieldbird.github.io</h2></a
+      >
+      <nav class="navigation">
+        <ul>
+          <li><a href="/pages/about.html">About</a></li>
+          <li><a href="/pages/projects.html">Things I've Done</a></li>
+          <li><a href="/pages/blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="post">
+      <h1 class="post-title">Breakout</h1>
+      <div class="post-date">11th March 2022</div>
+      <img src="../../images/breakout.png" alt="Breakout" class="post-image" />
+      <p>
+        <a href="https://github.com/danieldbird/breakout" target="_blank" rel="noopener noreferrer"
+          >Source Code</a
+        >
+        |
+        <a href="https://danieldbird.github.io/breakout/" target="_blank" rel="noopener noreferrer"
+          >Live Demo</a
+        >
+      </p>
+      <h2>The Project</h2>
+      <p>
+        As part of our coursework for
+        <a href="https://devacademy.co.nz/" target="_blank">Enspiral Dev Academy</a>, one of our
+        stretch material challenges was to play with JavaScript.
+      </p>
+      <p>I decided that a breakout game was an achievable goal given a few days of work.</p>
+      <h2>The Plan</h2>
+      <p>My basic plan was simple.</p>
+      <ul>
+        <li>A ball that bounces around the screen.</li>
+        <li>The paddle moves left and right depending on user input.</li>
+        <li>Ball collision with the paddle.</li>
+        <li>Ball collision with the bricks.</li>
+        <li>Win and lose conditions.</li>
+        <li>..and if I have time, some styling and sounds.</li>
+      </ul>
+      <h2>Humble Beginnings</h2>
+      <p>
+        <img src="../../images/breakout1.png" alt="Basic ball and paddle" />
+      </p>
+      <p>After a bit of work, I have a ball bouncing around the screen and a paddle.</p>
+      <p>
+        I have a number of options at this stage. I could go the simple route and only check to see
+        if the middle of the ball impacts with objects, but that just doesn't look right to me.
+      </p>
+      <p>The radius of the ball will always appear to go into the object it was hitting.</p>
+      <p>
+        I decided to go a step further and draw red boxes at 4 points around the ball. This way I
+        can check to see if the top, bottom, left, or right of the ball impacts with any object, and
+        do something when that happens.
+      </p>
+      <p>
+        I worked through a lot of problems I got stuck on here. Bugs like the ball getting stuck in
+        walls of objects, and the wall of the screen.
+      </p>
+      <p>Ordering of conditionals, and conditional hierarchy was important here.</p>
+      <p>I then moved on to the bricks.</p>
+      <p>
+        <img src="../../images/breakout3.png" alt="Basic ball and paddle" />
+      </p>
+      <p>
+        I got stuck here for a while. I needed a sum that would calculate the canvas width, minus
+        the brick padding and offset from the left, and divide this number into the amount of bricks
+        I wanted to display.
+      </p>
+      <p>I got there in the end.</p>
+      <h2>Some added touches</h2>
+      <p>At the moment the ball just bounces off the paddle in the opposite direction it came.</p>
+      <p>
+        I wanted something different and a bit random to happen to make the game more interesting,
+        so I decided to calculate a percentage from the centre of the paddle to the ends of the
+        paddle where the ball hit, and bounce the ball in that direction plus that percentage.
+      </p>
+      <p>This was fun to work out, and definitely made the game more interesting.</p>
+      <p>
+        I also added a feature were the ball just didn't start moving when you started the game, but
+        was stationary and stuck to the paddle, and required you to launch the ball with spacebar.
+        This was also a fun feature and gave the player more control.
+      </p>
+      <p>
+        When the ball is launched, I gave the launch trajectory a random value, so it wasn't the
+        same every time. This greatly increased the difficulty.
+      </p>
+      <p>
+        To further increase the difficulty, I made the ball velocity and paddle velocity increase
+        with every level passed.
+      </p>
+      <p>I also increased the amount of bricks with every level.</p>
+      <p>
+        I recorded my voice and my daughters voice to add some sound effects when the ball was
+        missed, or a level was passed. As well as some impact effects for the brick, paddle and
+        walls.
+      </p>
+      <p>
+        I added some fade in and out text when a level was passed, the ball was missed, or the game
+        was lost.
+      </p>
+      <h2>Finishing up</h2>
+      <p>I learnt a lot about the power of creating small, single-use functions.</p>
+      <p>
+        In the beginning, I was just adding functionality as I needed it, and it was getting very
+        unwieldy by the time the code was greater than 400 lines.
+      </p>
+      <p>
+        I refactored the code into small functions, and clearly commented everything. Not only for
+        myself, but if anyone else was to come across my code.
+      </p>
+      <p>
+        Because I was the only one that was going to work on the code, I did not commit my code as
+        often as I should have. This came back to bite me as I worked on multiple features at once
+        and forgot what I had and had not changed. This is something I need to improve in the
+        future, whether I am the only one working on the code or not.
+      </p>
+      <p>
+        <img src="../../images/breakout4.png" alt="Basic ball and paddle" />
+      </p>
+    </main>
+    <footer>
+      <span class="tweetybird">🐤</span>
+    </footer>
+    <div class="scrollToTopBtn"></div>
+    <canvas id="canvas"></canvas>
+  </body>
+</html>
